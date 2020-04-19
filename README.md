@@ -4,22 +4,23 @@
 
 1. [Introduction to IoT and ESP8266](https://github.com/poseidon078/eclub-iitk-esp8266#introduction)
 
-2. [Project]
+2. [Project](https://github.com/poseidon078/eclub-iitk-esp8266#project)
+
 - [Controlling an LED through the Internet](https://github.com/poseidon078/eclub-iitk-esp8266#project-one-controlling-an-led-through-the-internet)
-1. [Hardware and software required](https://github.com/poseidon078/eclub-iitk-esp8266#hardware-and-software-required)
-2. [Working](https://github.com/poseidon078/eclub-iitk-esp8266#working)
-3. [Installing ESP8266 platform](https://github.com/poseidon078/eclub-iitk-esp8266#installing-the-esp8266-platform)
-4. [Uploading the Code](https://github.com/poseidon078/eclub-iitk-esp8266#connections-and-uploading-of-the-code)
-5. [Execution](https://github.com/poseidon078/eclub-iitk-esp8266#running-disconnection-and-powering)
+a. [Hardware and software required](https://github.com/poseidon078/eclub-iitk-esp8266#hardware-and-software-required)
+b. [Working](https://github.com/poseidon078/eclub-iitk-esp8266#working)
+c. [Installing ESP8266 platform](https://github.com/poseidon078/eclub-iitk-esp8266#installing-the-esp8266-platform)
+d. [Uploading the Code](https://github.com/poseidon078/eclub-iitk-esp8266#connections-and-uploading-of-the-code)
+e. [Execution](https://github.com/poseidon078/eclub-iitk-esp8266#running-disconnection-and-powering)
 
 - [Receiving MPU6050 data over the Internet](https://github.com/poseidon078/eclub-iitk-esp8266#project-two-receiving-mpu6050-data-over-the-internet)
-1. [Hardware and software required](https://github.com/poseidon078/eclub-iitk-esp8266#hardware-and-software-required-1)
-2. [Working](https://github.com/poseidon078/eclub-iitk-esp8266#working-1)
-3. [Uploading Bare Minimum](https://github.com/poseidon078/eclub-iitk-esp8266#uploading-the-bare-minimum-code)
-4. [Uploading main code](https://github.com/poseidon078/eclub-iitk-esp8266#connections-and-uploading-of-the-main-code)
-5. [Connecting MPU6050 to UNO](https://github.com/poseidon078/eclub-iitk-esp8266#making-of-mpu6050-esp8266-uno-joint-connection)
-6. [Execution](https://github.com/poseidon078/eclub-iitk-esp8266#execution)
-7. [Switch to Internet](https://github.com/poseidon078/eclub-iitk-esp8266#switch-to-internet-and-powering)
+a. [Hardware and software required](https://github.com/poseidon078/eclub-iitk-esp8266#hardware-and-software-required-1)
+b. [Working](https://github.com/poseidon078/eclub-iitk-esp8266#working-1)
+c. [Uploading Bare Minimum](https://github.com/poseidon078/eclub-iitk-esp8266#uploading-the-bare-minimum-code)
+d. [Uploading main code](https://github.com/poseidon078/eclub-iitk-esp8266#connections-and-uploading-of-the-main-code)
+e. [Connecting MPU6050 to UNO](https://github.com/poseidon078/eclub-iitk-esp8266#making-of-mpu6050-esp8266-uno-joint-connection)
+f. [Execution](https://github.com/poseidon078/eclub-iitk-esp8266#execution)
+g. [Switch to Internet](https://github.com/poseidon078/eclub-iitk-esp8266#switch-to-internet-and-powering)
 
 3. [Interesting Readings](https://github.com/poseidon078/eclub-iitk-esp8266#external-references-that-may-be-read)
 
@@ -255,7 +256,7 @@ Installation of ESP8266 platform on Arduino IDE has already been discussed in th
 
 #### Connections and Uploading of the Main Code
 
-![flowchart](/ESPconn.png)
+![flowchart](/ESPconn1.png)
 
 ESP - Arduino UNO
 - Tx - Tx
