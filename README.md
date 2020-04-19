@@ -71,7 +71,7 @@ Connections (ARDUINO ---------------> ESP8266) :
 
 Select your ESP8266 board from Tools > Board > Generic ESP8266 Module.
 Now copy the code given below to the Arduino IDE and press the upload button. Change SSID into your Wi-Fi access point, and change the password to your Wi-Fi password and compile.
-
+```
 #include <ESP8266WiFi.h>
 
 const char* ssid = "YOUR_SSID";//type your ssid
@@ -169,7 +169,7 @@ delay(1);
 Serial.println("Client disconnected");
 Serial.println("");
 }
-
+```
 Connect GPIO 2 of the ESP8266 to the longer lead of the LED (+ve terminal). Now you can control the LED remotely through the internet!
 
 #### Running, Disconnection and powering:
@@ -206,7 +206,7 @@ ESP - Arduino UNO
 - Arduino Reset- Arduino GND
 Select Board as Generic ESP8266
 Now copy the code given below to the Arduino IDE and press the upload button. Change SSID into your Wi-Fi access point, and change the password to your Wi-Fi password and compile.
-
+```
 #include <ESP8266WiFi.h>
 #include <WiFiUdp.h>
 
@@ -243,7 +243,7 @@ udp.printf("%s",charBuf);
 udp.endPacket();
 }
 }
-
+```
 #### Making of MPU6050-ESP8266-UNO joint connection
 ESP8266 - UNO
 - Tx - Rx
