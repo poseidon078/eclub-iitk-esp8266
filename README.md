@@ -6,14 +6,14 @@
 
 2. [Project](https://github.com/poseidon078/eclub-iitk-esp8266#project)
 
-- [**Controlling an LED through the Internet - **](https://github.com/poseidon078/eclub-iitk-esp8266#project-one-controlling-an-led-through-the-internet)
+- [Controlling an LED through the Internet - ](https://github.com/poseidon078/eclub-iitk-esp8266#project-one-controlling-an-led-through-the-internet)
 a. [Hardware and software required](https://github.com/poseidon078/eclub-iitk-esp8266#hardware-and-software-required)
 b. [Working](https://github.com/poseidon078/eclub-iitk-esp8266#working)
 c. [Installing ESP8266 platform](https://github.com/poseidon078/eclub-iitk-esp8266#installing-the-esp8266-platform)
 d. [Uploading the Code](https://github.com/poseidon078/eclub-iitk-esp8266#connections-and-uploading-of-the-code)
 e. [Execution](https://github.com/poseidon078/eclub-iitk-esp8266#running-disconnection-and-powering)
 
-- [**Receiving MPU6050 data over the Internet - **](https://github.com/poseidon078/eclub-iitk-esp8266#project-two-receiving-mpu6050-data-over-the-internet)
+- [Receiving MPU6050 data over the Internet - ](https://github.com/poseidon078/eclub-iitk-esp8266#project-two-receiving-mpu6050-data-over-the-internet)
 a. [Hardware and software required](https://github.com/poseidon078/eclub-iitk-esp8266#hardware-and-software-required-1)
 b. [Working](https://github.com/poseidon078/eclub-iitk-esp8266#working-1)
 c. [Uploading Bare Minimum](https://github.com/poseidon078/eclub-iitk-esp8266#uploading-the-bare-minimum-code)
