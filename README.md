@@ -1,10 +1,29 @@
 # ESP8266
 
 ## Contents
+
 1. [Introduction to IoT and ESP8266](https://github.com/poseidon078/eclub-iitk-esp8266#introduction)
+
 2. [Project]
 - [Controlling an LED through the Internet](https://github.com/poseidon078/eclub-iitk-esp8266#project-one-controlling-an-led-through-the-internet)
+1. [Hardware and software required](https://github.com/poseidon078/eclub-iitk-esp8266#hardware-and-software-required)
+2. [Working](https://github.com/poseidon078/eclub-iitk-esp8266#working)
+3. [Installing ESP8266 platform](https://github.com/poseidon078/eclub-iitk-esp8266#installing-the-esp8266-platform)
+4. [Uploading the Code](https://github.com/poseidon078/eclub-iitk-esp8266#connections-and-uploading-of-the-code)
+5. [Execution](https://github.com/poseidon078/eclub-iitk-esp8266#running-disconnection-and-powering)
+
 - [Receiving MPU6050 data over the Internet](https://github.com/poseidon078/eclub-iitk-esp8266#project-two-receiving-mpu6050-data-over-the-internet)
+1. [Hardware and software required](https://github.com/poseidon078/eclub-iitk-esp8266#hardware-and-software-required-1)
+2. [Working](https://github.com/poseidon078/eclub-iitk-esp8266#working-1)
+3. [Uploading Bare Minimum](https://github.com/poseidon078/eclub-iitk-esp8266#uploading-the-bare-minimum-code)
+4. [Uploading main code](https://github.com/poseidon078/eclub-iitk-esp8266#connections-and-uploading-of-the-main-code)
+5. [Connecting MPU6050 to UNO](https://github.com/poseidon078/eclub-iitk-esp8266#making-of-mpu6050-esp8266-uno-joint-connection)
+6. [Execution](https://github.com/poseidon078/eclub-iitk-esp8266#execution)
+7. [Switch to Internet](https://github.com/poseidon078/eclub-iitk-esp8266#switch-to-internet-and-powering)
+
+3. [Interesting Readings](https://github.com/poseidon078/eclub-iitk-esp8266#external-references-that-may-be-read)
+
+4. [References used](https://github.com/poseidon078/eclub-iitk-esp8266#bibliography)
 
 ## Introduction
 Ever wanted to control another device from a distance? Ever fathomed making a joystick of your own? Or felt bored of using the keyboard for playing games? Here's how ESP8266 and IoT shall come to your rescue and make your friends feel jealous of you.
