@@ -245,7 +245,7 @@ Remove all the wires that were required for uploading. Lm117 is used to provide 
 - Arduino IDE
 
 ##### Working
-The MPU6050 is a sensor capable of telling the inertial measurements (YPR- Yaw, Pitch, Roll) of the object on which it is mounted. We'll use Arduino IDE to program an MPU6050-ESP8266-UNO connection. The project shall follow the following course: uploading of bare minimum to ESP8266, then uploading the code for ESP8266 to read data from the serial pins (Tx and Rx) and sending it wirelessly to the computer, and then finally connecting MPU6050 to UNO. **UDP (User Datagram Protocol)**  is a communication protocol like TCP. TCP is a connection-oriented protocol and UDP is a connection-less protocol. TCP establishes a connection between a sender and receiver before data can be sent. UDP does not establish a connection before sending data. Hence each element of data is administered individually while sending and not through pre determined fixed data channels. We use UDP as it is easier to handle and faster. It is unreliable though due to errors which can be corrected through error rectifiers at the two ends.
+The MPU6050 is a sensor capable of telling the inertial measurements (YPR- Yaw, Pitch, Roll) of the object on which it is mounted. We'll use Arduino IDE to program an MPU6050-ESP8266-UNO connection. The project shall follow the following course: uploading of bare minimum to ESP8266, then uploading the code for ESP8266 to read data from the serial pins (Tx and Rx) and sending it wirelessly to the computer, and then finally connecting MPU6050 to UNO. **UDP (User Datagram Protocol)**  is a communication protocol like TCP. TCP is a connection-oriented protocol and UDP is a connection-less protocol. TCP establishes a connection between a sender and receiver before data can be sent. UDP does not establish a connection before sending data. Hence each element of data is administered individually while sending and not through pre determined fixed data channels. We use UDP as it is easier to handle and faster. It is unreliable though due to errors which can be corrected through error rectifiers at the two ends. A port is a communication endpoint.
 
 #### Uploading the Bare Minimum Code
 The bare minimum is a code consisting of only two statements: void setup{} and void loop{}. The purpose is to reset the UNO board for uploading the esp.ino file to ESP8266-01 board through the UNO board. This is a necessary step before flashing and you can replace this step by using the procedure from the first project: using two push buttons.
@@ -274,7 +274,7 @@ Now copy the code given below to the Arduino IDE and press the upload button. Ch
 
 const char* ssid = "13:6";
 const char* password = "123456789";
-const char* udpAddress = "";          //IP address of your network
+const char* udpAddress = "";          //IP address of your access point
 
 const int udpPort = 3333;
 String buff;
@@ -287,7 +287,7 @@ Serial.println();
 Serial.printf("Connecting to %s ", ssid);
 
 //initializing the wireless connection
-WiFi.begin(ssid, password); //give the password and IP address for connection
+WiFi.begin(ssid, password); //give the password and name for connection
 while (WiFi.status() != WL_CONNECTED) {
 delay(500);
 Serial.print(".");
@@ -303,7 +303,7 @@ if(Serial.available()){                   //if Serial communication ports of UNO
 buff = Serial.readStringUntil('\n');      //read the line containing YPR reading
 char charBuf[buff.length() + 1];          //convert to character array
 buff.toCharArray(charBuf, buff.length() + 1);   
-udp.beginPacket(udpAddress,udpPort);      //open the channel to send data to the IP address at the port specific to your device-eg laptop
+udp.beginPacket(udpAddress,udpPort);      //open the channel to send data to the IP address at the port specific to the application being used-commonly for HTTP access, the port is 80
 udp.printf("%s",charBuf);                 //initialize the packet with the readings from UNO
 udp.endPacket();                          //close the channel
 }
