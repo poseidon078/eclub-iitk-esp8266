@@ -229,7 +229,7 @@ Click on the respective hyperlinks in your browser to toggle the LED ON and OFF.
 
 ![flowchart](/run2.png)
 
-Remove all the wires that were required for uploading. Lm117 is used to provide regulated 3.3V output. This will let you make the ESP8266 or ESP-01 module stand alone.
+Remove all the wires that were required for uploading. Lm1117 is used to provide regulated 3.3V output. This will let you make the ESP8266 or ESP-01 module stand alone.
 
 ![flowchart](/run3.png)
 
