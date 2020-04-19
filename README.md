@@ -51,15 +51,21 @@ I'll guide you to the completion of two very interesting projects in which the E
 #### Working
 The ESP-01 module has GPIO pins that can be programmed to turn an LED ON/OFF through the internet. The module can be programmed using an Arduino UNO through the serial pins (RX,TX). The general structure of the plan is: making the circuit connecting UNO-ESP8266-LED, then uploading the code onto it, establish the wireless connection between the circuit and the computer, disconnect the ESP8266 and connect it to apower source and then finally play with the LED. See the image for a flowchart representation of our project:
 
-![flowchart](\flow.png)
+![flowchart](/flow.png)
 
 #### Installing the ESP8266 platform:
 First, the Arduino environment has to be set up to make it compatible with the ESP-01 module. It is required to have Arduino version 1.6.4 or higher in order to install the ESP8266’s platform packages.
+
 1. Open the preferences window from the Arduino IDE. Go to File >Preferences
+![flowchart](/install1.png)
 2. Enter http://arduino.esp8266.com/stable/package_esp8266com_index.json into Additional Board Manager URLs field and click the “OK” button
+![flowchart](/install2.png)
 3. Open boards manager. Go to: Tools > Board > Boards Manager…
+![flowchart](/install3.png)
 4. Scroll down, select the ESP8266 board menu and install “esp8266 platform”.
+![flowchart](/install41.png)
 5. Choose your ESP8266 board from Tools > Board > Generic ESP8266 Module
+![flowchart](/install4.png)
 
 #### Connections and Uploading of the Code
 You can use the Arduino UNO to flash the code to ESP8266 ESP-01, but then we have to use manual flashing. For this, we use two push buttons. Refer to the following diagram:
