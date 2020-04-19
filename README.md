@@ -57,18 +57,29 @@ The ESP-01 module has GPIO pins that can be programmed to turn an LED ON/OFF thr
 First, the Arduino environment has to be set up to make it compatible with the ESP-01 module. It is required to have Arduino version 1.6.4 or higher in order to install the ESP8266’s platform packages.
 
 1. Open the preferences window from the Arduino IDE. Go to File >Preferences
+
 ![flowchart](/install1.png)
+
 2. Enter http://arduino.esp8266.com/stable/package_esp8266com_index.json into Additional Board Manager URLs field and click the “OK” button
+
 ![flowchart](/install2.png)
+
 3. Open boards manager. Go to: Tools > Board > Boards Manager…
+
 ![flowchart](/install3.png)
+
 4. Scroll down, select the ESP8266 board menu and install “esp8266 platform”.
+
 ![flowchart](/install41.png)
+
 5. Choose your ESP8266 board from Tools > Board > Generic ESP8266 Module
+
 ![flowchart](/install4.png)
 
 #### Connections and Uploading of the Code
 You can use the Arduino UNO to flash the code to ESP8266 ESP-01, but then we have to use manual flashing. For this, we use two push buttons. Refer to the following diagram:
+
+![flowchart](/ESPconn.png)
 
 While uploading the code, follow the procedure to keep the flash button pressed while you click once on reset and release the flash button.
 
