@@ -15,6 +15,8 @@ Communication over the internet happens through 'packets' of data. The
 
 Recall the way we defined ESP8266: a low-cost Wi-Fi microchip, with a full TCP/IP stack and microcontroller capability. So it is a device with embedded wireless networking technology on which the communication protocols (TCP/IP) are established and can be used to control other devices-an LED bulb for instance.
 
+![ESP8266-01](/esp8266-5.png)
+
 Moreover, the ESP8266 module has three operational modes:
 
 1. Access Point (AP) — In AP, the Wi-Fi module acts as a Wi-Fi network, or access point (hence the name). It allows other devices to connect to it. And establishes a two-way communication between the ESP8266 and the device that is connected to it via Wi-Fi.
@@ -48,6 +50,8 @@ I'll guide you to the completion of two very interesting projects in which the E
 
 #### Working
 The ESP-01 module has GPIO pins that can be programmed to turn an LED ON/OFF through the internet. The module can be programmed using an Arduino UNO through the serial pins (RX,TX). The general structure of the plan is: making the circuit connecting UNO-ESP8266-LED, then uploading the code onto it, establish the wireless connection between the circuit and the computer, disconnect the ESP8266 and connect it to apower source and then finally play with the LED. See the image for a flowchart representation of our project:
+
+![flowchart](\flow.png)
 
 #### Installing the ESP8266 platform:
 First, the Arduino environment has to be set up to make it compatible with the ESP-01 module. It is required to have Arduino version 1.6.4 or higher in order to install the ESP8266’s platform packages.
