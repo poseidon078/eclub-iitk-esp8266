@@ -1,4 +1,11 @@
 # ESP8266
+
+## Contents
+1. [Introduction to IoT and ESP8266](https://github.com/poseidon078/eclub-iitk-esp8266#introduction)
+2. [Project]
+- [Controlling an LED through the Internet](https://github.com/poseidon078/eclub-iitk-esp8266#project-one-controlling-an-led-through-the-internet)
+- [Receiving MPU6050 data over the Internet](https://github.com/poseidon078/eclub-iitk-esp8266#project-two-receiving-mpu6050-data-over-the-internet)
+
 ## Introduction
 Ever wanted to control another device from a distance? Ever fathomed making a joystick of your own? Or felt bored of using the keyboard for playing games? Here's how ESP8266 and IoT shall come to your rescue and make your friends feel jealous of you.
 
@@ -79,7 +86,7 @@ First, the Arduino environment has to be set up to make it compatible with the E
 #### Connections and Uploading of the Code
 You can use the Arduino UNO to flash the code to ESP8266 ESP-01, but then we have to use manual flashing. For this, we use two push buttons. Refer to the following diagram:
 
-![flowchart](/ESPconn.png)
+![flowchart](/working2.png)
 
 While uploading the code, follow the procedure to keep the flash button pressed while you click once on reset and release the flash button.
 
@@ -195,8 +202,16 @@ Connect GPIO 2 of the ESP8266 to the longer lead of the LED (+ve terminal). Now 
 
 #### Running, Disconnection and powering:
 Open the serial monitor and open the URL shown in your serial monitor through your web browser. 
+
+![flowchart](/run1.png)
+
 Click on the respective hyperlinks in your browser to toggle the LED ON and OFF.
+
+![flowchart](/run2.png)
+
 Remove all the wires that were required for uploading. Lm117 is used to provide regulated 3.3V output. This will let you make the ESP8266 or ESP-01 module stand alone.
+
+![flowchart](/run3.png)
 
 **Note:** Currently, the ESP8266 module can only be accessed through the local Wi-Fi network. In order to control your devices from the internet, you have to do port forwarding on your router. To do this, find the IP address of your system either by using the "ifconfig" command on your terminal, or go to whatsmyip.org. Copy down your IP address. Now open your router setting and go to the "Forwarding" settings. Enter the details for the "Service Port" and "IP Address". The service port is the port number from your Arduino code (Service port: 80). The IP address is the one you noted down before. Leave the other settings as default. Now go to your browser and enter the address: xxx.xxx.xx.xx:80. This should open up the page for controlling the LED.
 
@@ -214,9 +229,15 @@ The MPU6050 is a sensor capable of telling the inertial measurements (YPR- Yaw, 
 
 #### Uploading the Bare Minimum Code
 The bare minimum is a code consisting of only two statements: void setup{} and void loop{}. The purpose is to reset the UNO board for uploading the esp.ino file to ESP8266-01 board through the UNO board. This is a necessary step before flashing and you can replace this step by using the procedure from the first project: using two push buttons.
+
+![flowchart](/6UKjWiXETVXyS1tLFNaJpjfDLAyKk7dJechIbprv.png)
+
 Installation of ESP8266 platform on Arduino IDE has already been discussed in the first project.
 
 #### Connections and Uploading of the Main Code
+
+![flowchart](/ESPconn.png)
+
 ESP - Arduino UNO
 - Tx - Tx
 - Rx - Rx
@@ -266,6 +287,9 @@ udp.endPacket();
 }
 ```
 #### Making of MPU6050-ESP8266-UNO joint connection
+
+![flowchart](/conn.png)
+
 ESP8266 - UNO
 - Tx - Rx
 - Rx - Tx
@@ -287,6 +311,28 @@ Typical Output Format >> pitch_tab_roll
 After establishing wireless connection, switch to the hyperlink given on the serial monitor and disconnect the UNO. Now power the UNO through an external source. See the received data on the IP address.
 
 ## Some Important Observations
-- **Powering:** ESP8266-01 is designed for an operational voltage of 3.3v. So you need to downregulate the 5v voltage on UNO to 3.3v (using LM1117) on the wires starting from the Tx and 5v pins of UNO.
-- **USB to TTL converter** can be used as a replacement for Arduino IDE to upload the code on ESP8266.
+1. **Powering:** ESP8266-01 is designed for an operational voltage of 3.3v. So you need to downregulate the 5v voltage on UNO to 3.3v (using LM1117) on the wires starting from the Tx and 5v pins of UNO.
 
+2. **USB to TTL converter with DTR pin** can be used as a replacement for Arduino IDE to upload the code on ESP8266 to allow smooth upload of code (without using flash and reset buttons or bare minimum)
+
+![flowchart](/TTL.png)
+
+USB TTL ------> ESP8266 ESP-01
+- GND------------>GND
+- TX-------------->RX
+- RX-------------->TX
+- RTS------------->RST
+- DTR------------->GPIO0
+
+3. After obtaining the MPU readings, a Python code can run your favourite game and press the corresponding buttons according to the MPU readings.
+
+## External references that may be read
+- https://en.wikipedia.org/wiki/Transistor%E2%80%93transistor_logic
+- https://en.wikipedia.org/wiki/Universal_asynchronous_receiver-transmitter
+- https://en.wikipedia.org/wiki/Serial_communication
+
+## Bibliography
+- https://maker.pro/esp8266/tutorial/esp8266-tutorial-how-to-control-anything-from-the-internet
+- https://maker.pro/esp8266/tutorial/how-to-program-esp8266s-onboard-gpio-pins
+- Ashok's git
+- Wikipedia and Google
