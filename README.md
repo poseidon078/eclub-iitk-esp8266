@@ -6,25 +6,25 @@
 
 2. [Project](https://github.com/poseidon078/eclub-iitk-esp8266#project)
 
-- [Controlling an LED through the Internet - ](https://github.com/poseidon078/eclub-iitk-esp8266#project-one-controlling-an-led-through-the-internet)
-a. [Hardware and software required](https://github.com/poseidon078/eclub-iitk-esp8266#hardware-and-software-required)
-b. [Working](https://github.com/poseidon078/eclub-iitk-esp8266#working)
-c. [Installing ESP8266 platform](https://github.com/poseidon078/eclub-iitk-esp8266#installing-the-esp8266-platform)
-d. [Uploading the Code](https://github.com/poseidon078/eclub-iitk-esp8266#connections-and-uploading-of-the-code)
-e. [Execution](https://github.com/poseidon078/eclub-iitk-esp8266#running-disconnection-and-powering)
+3. [Controlling an LED through the Internet - ](https://github.com/poseidon078/eclub-iitk-esp8266#project-one-controlling-an-led-through-the-internet)
+- [Hardware and software required](https://github.com/poseidon078/eclub-iitk-esp8266#hardware-and-software-required)
+- [Working](https://github.com/poseidon078/eclub-iitk-esp8266#working)
+- [Installing ESP8266 platform](https://github.com/poseidon078/eclub-iitk-esp8266#installing-the-esp8266-platform)
+- [Uploading the Code](https://github.com/poseidon078/eclub-iitk-esp8266#connections-and-uploading-of-the-code)
+- [Execution](https://github.com/poseidon078/eclub-iitk-esp8266#running-disconnection-and-powering)
 
-- [Receiving MPU6050 data over the Internet - ](https://github.com/poseidon078/eclub-iitk-esp8266#project-two-receiving-mpu6050-data-over-the-internet)
-a. [Hardware and software required](https://github.com/poseidon078/eclub-iitk-esp8266#hardware-and-software-required-1)
-b. [Working](https://github.com/poseidon078/eclub-iitk-esp8266#working-1)
-c. [Uploading Bare Minimum](https://github.com/poseidon078/eclub-iitk-esp8266#uploading-the-bare-minimum-code)
-d. [Uploading main code](https://github.com/poseidon078/eclub-iitk-esp8266#connections-and-uploading-of-the-main-code)
-e. [Connecting MPU6050 to UNO](https://github.com/poseidon078/eclub-iitk-esp8266#making-of-mpu6050-esp8266-uno-joint-connection)
-f. [Execution](https://github.com/poseidon078/eclub-iitk-esp8266#execution)
-g. [Switch to Internet](https://github.com/poseidon078/eclub-iitk-esp8266#switch-to-internet-and-powering)
+4. [Receiving MPU6050 data over the Internet - ](https://github.com/poseidon078/eclub-iitk-esp8266#project-two-receiving-mpu6050-data-over-the-internet)
+- [Hardware and software required](https://github.com/poseidon078/eclub-iitk-esp8266#hardware-and-software-required-1)
+- [Working](https://github.com/poseidon078/eclub-iitk-esp8266#working-1)
+- [Uploading Bare Minimum](https://github.com/poseidon078/eclub-iitk-esp8266#uploading-the-bare-minimum-code)
+- [Uploading main code](https://github.com/poseidon078/eclub-iitk-esp8266#connections-and-uploading-of-the-main-code)
+- [Connecting MPU6050 to UNO](https://github.com/poseidon078/eclub-iitk-esp8266#making-of-mpu6050-esp8266-uno-joint-connection)
+- [Execution](https://github.com/poseidon078/eclub-iitk-esp8266#execution)
+- [Switch to Internet](https://github.com/poseidon078/eclub-iitk-esp8266#switch-to-internet-and-powering)
 
-3. [Interesting Readings](https://github.com/poseidon078/eclub-iitk-esp8266#external-references-that-may-be-read)
+5. [Interesting Readings](https://github.com/poseidon078/eclub-iitk-esp8266#external-references-that-may-be-read)
 
-4. [References used](https://github.com/poseidon078/eclub-iitk-esp8266#bibliography)
+6. [References used](https://github.com/poseidon078/eclub-iitk-esp8266#bibliography)
 
 ## Introduction
 Ever wanted to control another device from a distance? Ever fathomed making a joystick of your own? Or felt bored of using the keyboard for playing games? Here's how ESP8266 and IoT shall come to your rescue and make your friends feel jealous of you.
@@ -38,7 +38,7 @@ Nothing but an acronym for Espressif, Inc. That firm is credited with the making
 Communication over the internet happens through 'packets' of data. The
 **Internet Protocol (IP)** has the task of delivering packets from the source host to the destination host solely based on the IP addresses in the packet headers. For this purpose, IP defines packet structures that encapsulate the data to be delivered. It also defines addressing methods that are used to label the datagram (the unit of transfer in this 'packet' system) with source and destination information. **The Transmission Control Protocol (TCP)** provides reliable, ordered, and error-checked delivery of a stream of octets (bytes) between applications running on hosts communicating via an IP network.
 
-**Wi-Fi** is a family of wireless networking technologies, which are commonly used for local area networking of devices and Internet access. **Access point (AP)** is a networking hardware device that allows other Wi-Fi devices to connect to a wired network. An AP connects directly to a wired local area network and the AP then provides wireless connections using wireless LAN technology, typically Wi-Fi, for other devices to use that wired connection.
+**Wi-Fi** is a family of wireless networking technologies, which are commonly used for local area networking of devices and Internet access. **Access point (AP)** is a networking hardware device that allows other Wi-Fi devices to connect to a wired network. An AP connects directly to a wired local area network and the AP then provides wireless connections using wireless LAN technology, typically Wi-Fi, for other devices to use that wired connection. It has a unique IP address which can be used/accessed by anyone on the network to communicate with someone else on that network.
 
 Recall the way we defined ESP8266: a low-cost Wi-Fi microchip, with a full TCP/IP stack and microcontroller capability. So it is a device with embedded wireless networking technology on which the communication protocols (TCP/IP) are established and can be used to control other devices-an LED bulb for instance.
 
@@ -245,7 +245,7 @@ Remove all the wires that were required for uploading. Lm117 is used to provide 
 - Arduino IDE
 
 ##### Working
-The MPU6050 is a sensor capable of telling the inertial measurements (YPR- Yaw, Pitch, Roll) of the object on which it is mounted. We'll use Arduino IDE to program an MPU6050-ESP8266-UNO connection. The project shall follow the following course: uploading of bare minimum to ESP8266, then uploading the code for ESP8266 to read data from the serial pins (Tx and Rx) and sending it wirelessly to the computer, and then finally connecting MPU6050 to UNO.
+The MPU6050 is a sensor capable of telling the inertial measurements (YPR- Yaw, Pitch, Roll) of the object on which it is mounted. We'll use Arduino IDE to program an MPU6050-ESP8266-UNO connection. The project shall follow the following course: uploading of bare minimum to ESP8266, then uploading the code for ESP8266 to read data from the serial pins (Tx and Rx) and sending it wirelessly to the computer, and then finally connecting MPU6050 to UNO. **UDP (User Datagram Protocol)**  is a communication protocol like TCP. TCP is a connection-oriented protocol and UDP is a connection-less protocol. TCP establishes a connection between a sender and receiver before data can be sent. UDP does not establish a connection before sending data. Hence each element of data is administered individually while sending and not through pre determined fixed data channels. We use UDP as it is easier to handle and faster. It is unreliable though due to errors which can be corrected through error rectifiers at the two ends.
 
 #### Uploading the Bare Minimum Code
 The bare minimum is a code consisting of only two statements: void setup{} and void loop{}. The purpose is to reset the UNO board for uploading the esp.ino file to ESP8266-01 board through the UNO board. This is a necessary step before flashing and you can replace this step by using the procedure from the first project: using two push buttons.
@@ -267,14 +267,14 @@ ESP - Arduino UNO
 - CH_PD - 5V
 - Arduino Reset- Arduino GND
 Select Board as Generic ESP8266
-Now copy the code given below to the Arduino IDE and press the upload button. Change SSID into your Wi-Fi access point, and change the password to your Wi-Fi password and compile.
+Now copy the code given below to the Arduino IDE and press the upload button. Change SSID into your Wi-Fi access point name, and change the password to your Wi-Fi password and compile.
 ```
 #include <ESP8266WiFi.h>
 #include <WiFiUdp.h>
 
 const char* ssid = "13:6";
 const char* password = "123456789";
-const char* udpAddress = "";
+const char* udpAddress = "";          //IP address of your network
 
 const int udpPort = 3333;
 String buff;
@@ -286,23 +286,26 @@ Serial.begin(115200);
 Serial.println();
 Serial.printf("Connecting to %s ", ssid);
 
-WiFi.begin(ssid, password);
+//initializing the wireless connection
+WiFi.begin(ssid, password); //give the password and IP address for connection
 while (WiFi.status() != WL_CONNECTED) {
 delay(500);
 Serial.print(".");
 }
 Serial.println(" connected"); 
-Serial.printf("Web server started, open %s in a web browser\n", WiFi.localIP().toString().c_str());
+Serial.printf("Web server started, open %s in a web browser\n", WiFi.localIP().toString().c_str());//c_str returns the pointer to the character array
 }
 
+
+//constantly read from the communication pins on UNO and send the read data via UDP to the IP address
 void loop(){
-if(Serial.available()){
-buff = Serial.readStringUntil('\n'); 
-char charBuf[buff.length() + 1]; 
-buff.toCharArray(charBuf, buff.length() + 1); 
-udp.beginPacket(udpAddress,udpPort); 
-udp.printf("%s",charBuf); 
-udp.endPacket();
+if(Serial.available()){                   //if Serial communication ports of UNO are receiving data
+buff = Serial.readStringUntil('\n');      //read the line containing YPR reading
+char charBuf[buff.length() + 1];          //convert to character array
+buff.toCharArray(charBuf, buff.length() + 1);   
+udp.beginPacket(udpAddress,udpPort);      //open the channel to send data to the IP address at the port specific to your device-eg laptop
+udp.printf("%s",charBuf);                 //initialize the packet with the readings from UNO
+udp.endPacket();                          //close the channel
 }
 }
 ```
