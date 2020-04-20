@@ -338,7 +338,7 @@ You can also customize the data as shown below, by editing MPU6050 code.
 ![execution](/image-5.png)
 
 ## Some Important Observations
-1. **Powering:** ESP8266-01 is designed for an operational voltage of 3.3v. So you need to downregulate the 5v voltage on UNO to 3.3v (using LM1117) on the wires starting from the Tx and 5v pins of UNO.
+1. **Powering:** ESP8266-01 is designed for an operational voltage of 3.3v. However, all TTL based serial communication happens at 5V on Arduino board. So you need to downregulate the 5v voltage on UNO to 3.3v (using LM1117) on the wires starting from the Tx(for serial communication) and 5v(for power) pins of UNO.
 
 2. **USB to TTL converter with DTR pin** can be used as a replacement for Arduino IDE to upload the code on ESP8266 to allow smooth upload of code (without using flash and reset buttons or bare minimum)
 
