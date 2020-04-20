@@ -323,6 +323,7 @@ ESP8266 - UNO
 - Remove Arduino Reset from Ground.
 
 #### Execution
+Download [MPUrequirements.rar](/MPUrequirements.rar) file.
 Start Sending Data to Serial Monitor of the Arduino using sensor.ino file
 As we are using MPU6050, we need some extra libraries. Copy I2Cdev and MPU6050 to your libraies folder in Arduino.
 Make connections according to conn.png
