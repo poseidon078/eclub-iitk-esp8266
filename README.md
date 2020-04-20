@@ -250,7 +250,7 @@ The MPU6050 is a sensor capable of telling the inertial measurements (YPR- Yaw, 
 #### Uploading the Bare Minimum Code
 The bare minimum is a code consisting of only two statements: void setup{} and void loop{}. The purpose is to reset the UNO board for uploading the esp.ino file to ESP8266-01 board through the UNO board. This is a necessary step before flashing and you can replace this step by using the procedure from the first project: using two push buttons.
 
-![flowchart](/6UKjWiXETVXyS1tLFNaJpjfDLAyKk7dJechIbprv.png)
+![flowchart](/BareMinimum.png)
 
 Installation of ESP8266 platform on Arduino IDE has already been discussed in the first project.
 
