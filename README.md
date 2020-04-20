@@ -333,6 +333,9 @@ Typical Output Format >> pitch_tab_roll
 
 #### Switch to internet and powering
 After establishing wireless connection, switch to the hyperlink given on the serial monitor and disconnect the UNO. Now power the UNO through an external source. See the received data on the IP address.
+You can also customize the data as shown below, by editing MPU6050 code.
+
+![execution](/image-5.png)
 
 ## Some Important Observations
 1. **Powering:** ESP8266-01 is designed for an operational voltage of 3.3v. So you need to downregulate the 5v voltage on UNO to 3.3v (using LM1117) on the wires starting from the Tx and 5v pins of UNO.
