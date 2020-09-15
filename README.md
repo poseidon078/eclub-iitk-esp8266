@@ -117,8 +117,8 @@ Connections (ARDUINO ---------------> ESP8266) :
 - Reset Button------------>RST
 - Flash Button------------>GPIO0
 
-Select your ESP8266 board from Tools > Board > Generic ESP8266 Module.
-Now copy the code given below to the Arduino IDE and press the upload button. Change SSID into your Wi-Fi access point, and change the password to your Wi-Fi password and compile.
+Select your ESP8266 board from Tools -> Board -> Generic ESP8266 Module. Now copy the code given here to the Arduino IDE. Press the upload button. Now change SSID into your Wi-Fi access point and the password to your Wi-Fi password and compile.
+
 ```
 #include <ESP8266WiFi.h>
 
@@ -218,7 +218,7 @@ Serial.println("Client disconnected");
 Serial.println("");
 }
 ```
-Connect GPIO 2 of the ESP8266 to the longer lead of the LED (+ve terminal). Now you can control the LED remotely through the internet!
+Connect GPIO 2 of the ESP8266 to the longer lead of the LED (+ve terminal). You can now control the LED remotely through the internet!
 
 #### Running, Disconnection and powering:
 Open the serial monitor and open the URL shown in your serial monitor through your web browser. 
@@ -229,11 +229,11 @@ Click on the respective hyperlinks in your browser to toggle the LED ON and OFF.
 
 ![flowchart](/run2.png)
 
-Remove all the wires that were required for uploading. Lm1117 is used to provide regulated 3.3V output. This will let you make the ESP8266 or ESP-01 module stand alone.
+Now remove all the wires that were required for uploading. Lm1117 is used to provide regulated 3.3V output. It will let you make the ESP8266 or ESP-01 module stand alone.
 
 ![flowchart](/run3.png)
 
-**Note:** Currently, the ESP8266 module can only be accessed through the local Wi-Fi network. In order to control your devices from the internet, you have to do port forwarding on your router. To do this, find the IP address of your system either by using the "ifconfig" command on your terminal, or go to whatsmyip.org. Copy down your IP address. Now open your router setting and go to the "Forwarding" settings. Enter the details for the "Service Port" and "IP Address". The service port is the port number from your Arduino code (Service port: 80). The IP address is the one you noted down before. Leave the other settings as default. Now go to your browser and enter the address: xxx.xxx.xx.xx:80. This should open up the page for controlling the LED.
+**Note:** Currently, the ESP8266 module can be accessed only through the local Wi-Fi network. To control your devices from the internet, you must perform port forwarding on your router. In order to do this, find the IP address of your system either by means of using the "ifconfig" command on your terminal, or going to whatsmyip.org. Then copy down your IP address. Open your router setting now and go to the "Forwarding" settings. Enter the details for the "Service Port" and "IP Address". Here, the IP address is the one you noted down before and the service port is the port number from your Arduino code (Service port: 80). Leave the other settings as default. Go to your browser now and enter the address: xxx.xxx.xx.xx:80 and this would open up the page for controlling the LED.
 
 ### Project Two: Receiving MPU6050 data over the Internet
 
