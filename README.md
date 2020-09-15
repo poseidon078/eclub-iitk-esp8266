@@ -50,9 +50,9 @@ Moreover, the ESP8266 module has three operational modes:
 
 2. Station (STA) — In STA mode, the ESP-01 can connect to an AP (access point) such as the Wi-Fi network from your house. This allows any device connected to that network to communicate with the module.
 
-3. Both — In this mode ESP-01 act as both an AP as well as in STA mode.
+3. Both — In this mode ESP-01 acts as both an AP as well as in STA mode.
 
-You can switch these modes using **AT commands**: instructions used to control a modem. A Modem does is a hardware device that converts data into a format suitable for a transmission medium so that it can be transmitted from one computer to another. Here our modem is the ESP8266.
+You can switch these modes using **AT commands**: instructions used to control a modem. A Modem is a hardware device that converts data into a format suitable for a transmission medium so that it can be transmitted from one computer to another. Here our modem is the ESP8266.
 
 ## Project
 
@@ -76,7 +76,7 @@ I'll guide you to the completion of two very interesting projects in which the E
 - Two 4 pin push buttons
 
 #### Working
-The ESP-01 module has GPIO pins that can be programmed to turn an LED ON/OFF through the internet. The module can be programmed using an Arduino UNO through the serial pins (RX,TX). The general structure of the plan is: making the circuit connecting UNO-ESP8266-LED, then uploading the code onto it, establish the wireless connection between the circuit and the computer, disconnect the ESP8266 and connect it to apower source and then finally play with the LED. See the image for a flowchart representation of our project:
+The ESP-01 module has GPIO pins that can be programmed to turn an LED ON/OFF through the internet. The module can be programmed using an Arduino UNO through the serial pins (RX,TX). The general structure of the plan is: making the circuit connecting UNO-ESP8266-LED, then uploading the code onto it, establish the wireless connection between the circuit and the computer, disconnect the ESP8266 and connect it to a power source and then finally play with the LED. See the image for a flowchart representation of our project:
 
 ![flowchart](/flow.png)
 
