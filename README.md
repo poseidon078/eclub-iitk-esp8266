@@ -76,7 +76,7 @@ I'll guide you to the completion of two very interesting projects in which the E
 - Two 4 pin push buttons
 
 #### Working
-The ESP-01 module has GPIO pins that can be programmed to turn an LED ON/OFF through the internet. The module can be programmed using an Arduino UNO through the serial pins (RX,TX). The general structure of the plan is: making the circuit connecting UNO-ESP8266-LED, then uploading the code onto it, establish the wireless connection between the circuit and the computer, disconnect the ESP8266 and connect it to a power source and then finally play with the LED. See the image for a flowchart representation of our project:
+The ESP-01 module has GPIO pins which can be programmed to turn an LED ON/OFF through the internet. The module can be programmed using Arduino UNO through the serial pins (RX,TX). The general structure of the plan is: making the circuit connecting UNO-ESP8266-LED, then uploading the code onto it, establish the wireless connection between the circuit and the computer, disconnect the ESP8266 and connect it to a power source and then finally play with the LED. See the image for a flowchart representation of our project:
 
 ![flowchart](/flow.png)
 
@@ -104,7 +104,7 @@ First, the Arduino environment has to be set up to make it compatible with the E
 ![flowchart](/install4.png)
 
 #### Connections and Uploading of the Code
-You can use the Arduino UNO to flash the code to ESP8266 ESP-01, but then we have to use manual flashing. For this, we use two push buttons. Refer to the following diagram:
+You can now use the Arduino UNO to flash the code to ESP8266 ESP-01, but then we have to use manual flashing. For this, we use two push buttons. Refer to the following diagram:
 
 ![flowchart](/working2.png)
 
