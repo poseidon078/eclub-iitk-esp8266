@@ -221,11 +221,11 @@ Serial.println("");
 Connect GPIO 2 of the ESP8266 to the longer lead of the LED (+ve terminal). You can now control the LED remotely through the internet!
 
 #### Running, Disconnection and powering:
-Open the serial monitor and open the URL shown in your serial monitor through your web browser. 
+Open the serial monitor and open the URL shown on your serial monitor through your web browser. 
 
 ![flowchart](/run1.png)
 
-Click on the respective hyperlinks in your browser to toggle the LED ON and OFF.
+Click on the respective hyperlinks on your browser to toggle the LED ON and OFF.
 
 ![flowchart](/run2.png)
 
