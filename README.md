@@ -78,7 +78,7 @@ I'll guide you to the completion of two very interesting projects in which the E
 #### Working
 The ESP-01 module has GPIO pins which can be programmed to turn an LED ON/OFF through the internet. The module can be programmed using Arduino UNO through the serial pins (RX,TX). The general structure of the plan is: making the circuit connecting UNO-ESP8266-LED, then uploading the code onto it, establish the wireless connection between the circuit and the computer, disconnect the ESP8266 and connect it to a power source and then finally play with the LED. See the image for a flowchart representation of our project:
 
-![flowchart](/flow.png)
+![flowchart](/flow.jpg)
 
 #### Installing the ESP8266 platform:
 First, the Arduino environment has to be set up to make it compatible with the ESP-01 module. It is required to have Arduino version 1.6.4 or higher in order to install the ESP8266’s platform packages.
@@ -106,7 +106,7 @@ First, the Arduino environment has to be set up to make it compatible with the E
 #### Connections and Uploading of the Code
 You can now use the Arduino UNO to flash the code to ESP8266 ESP-01, but then we have to use manual flashing. For this, we use two push buttons. Refer to the following diagram:
 
-![flowchart](/working2.png)
+![flowchart](/working2.jpg)
 
 While uploading the code, follow the procedure to keep the flash button pressed while you click once on reset and release the flash button.
 
@@ -231,7 +231,7 @@ Click on the respective hyperlinks on your browser to toggle the LED ON and OFF.
 
 Now remove all the wires that were required for uploading. Lm1117 is used to provide regulated 3.3V output. It will let you make the ESP8266 or ESP-01 module stand alone.
 
-![flowchart](/run3.png)
+![flowchart](/run3.jpg)
 
 **Note:** Currently, the ESP8266 module can be accessed only through the local Wi-Fi network. To control your devices from the internet, you must perform port forwarding on your router. In order to do this, find the IP address of your system either by means of using the "ifconfig" command on your terminal, or going to whatsmyip.org. Then copy down your IP address. Open your router setting now and go to the "Forwarding" settings. Enter the details for the "Service Port" and "IP Address". Here, the IP address is the one you noted down before and the service port is the port number from your Arduino code (Service port: 80). Leave the other settings as default. Go to your browser now and enter the address: xxx.xxx.xx.xx:80 and this would open up the page for controlling the LED.
 
@@ -256,7 +256,7 @@ Installation of ESP8266 platform on Arduino IDE has already been discussed in th
 
 #### Connections and Uploading of the Main Code
 
-![flowchart](/ESPconn1.png)
+![flowchart](/ESPconn1.jpg)
 
 ESP - Arduino UNO
 - Tx - Tx
@@ -311,7 +311,7 @@ udp.endPacket();                          //close the channel
 ```
 #### Making of MPU6050-ESP8266-UNO joint connection
 
-![flowchart](/conn.png)
+![flowchart](/conn.jpg)
 
 ESP8266 - UNO
 - Tx - Rx
@@ -342,7 +342,7 @@ You can also customize the data as shown below, by editing MPU6050 code.
 
 2. **USB to TTL converter with DTR pin** can be used as a replacement for Arduino IDE to upload the code on ESP8266 to allow smooth upload of code (without using flash and reset buttons or bare minimum)
 
-![flowchart](/TTL.png)
+![flowchart](/TTL.jpg)
 
 USB TTL ------> ESP8266 ESP-01
 - GND------------>GND
