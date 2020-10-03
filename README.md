@@ -42,7 +42,7 @@ Communication over the internet happens through 'packets' of data. The
 
 Recall the way we defined ESP8266: a low-cost Wi-Fi microchip, with a full TCP/IP stack and microcontroller capability. So it is a device with embedded wireless networking technology on which the communication protocols (TCP/IP) are established and can be used to control other devices-an LED bulb for instance.
 
-![ESP8266-01](/esp8266-5.png)
+![ESP8266-01](/0_OFAzKdKE-9tXX-WZ.jpg)
 
 Moreover, the ESP8266 module has three operational modes:
 
